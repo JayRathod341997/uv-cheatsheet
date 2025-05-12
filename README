@@ -1,0 +1,12 @@
+uv python list
+
+uv python install 3.9.21
+
+uv run app.py # run with default python version
+uv run --python 3.11.9 app.py # run with specific python version
+
+uv run  --with rich temp.py # run with package install of rich
+
+
+ uv init --script temp.py --python 3.11.9 # create a new script with specific python version
+ uv add --script main.py "rich" # add a package to the script
